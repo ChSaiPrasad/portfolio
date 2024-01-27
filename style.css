@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+/*hovering*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: 
+  #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+nav {
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    list-style: none;
+    font-weight: 600;
+    margin: 0 23px;
+    text-decoration: none;
+    color: rgb(0, 0, 33);
+}
+
+nav ul li a:hover {
+    color: lavender;
+    font-weight: bold;
+}
+
+.left {
+    font-size: 18px !important;
+    color: rgb(121, 10, 225) !important;
+}
+
+.firstSection {
+    margin-right: 0px !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+
+}
+
+.rightSection {
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80');
+    height: 90vh;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+.rightSection img {
+    width: 100vw;
+    height: 100vh;
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+
+
+
+.text-grey {
+    color: grey;
+}
+
+.secondSection {
+    width: 80vw;
+    margin: auto;
+    height: 400px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+
+}
+
+.trapezium-container {
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80');
+    clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%)
+}
+
+.secondSection .box {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+}
+
+.secondSection .vertical {
+
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    width: 150px;
+    color: grey;
+    font-size: 9px
+}
+
+
+/* boxing */
+.box2 {
+    height: 200px;
+    width: 75px;
+    background-color: rgba(225, 225, 225, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.box2 h2 {
+    color: yellowgreen;
+    font-size: 10px;
+    margin-bottom: 40px;
+}
+
+.box2 p {
+    color: rgb(225, 225, 225, 0.1);
+    font-size: 10px;
+}
+
+
+
+
+
+/* footer */
+footer {
+    background-color: rgb(18, 18, 62);
+
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px;
+}
+
+
+
+/* Education */
+#education {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+#education h1 {
+    margin: 20px;
+    font-size: 32px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+
+.e-box {
+    height: 150px;
+    width: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(237, 235, 235)
+}
+
+.e-box h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+.e-box p {
+    color: grey;
+    font-size: 20px;
+}
+
+/* Projects */
+
+.p-box {
+    margin-bottom: 12px;
+}
+
+
+
+.p-image {
+    height: 300px;
+    width: 100%;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px !important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+.p-subbox {
+    padding: 12px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects2 */
+.p2-box {
+    margin-bottom: 30px;
+    padding: 12px;
+    margin-left: 30px;
+    border-radius: 12px;
+    background-color: rgb(235, 235, 235);
+}
+
+.btn2 {
+    margin-left:20px ;
+    background-color: rgb(121, 10, 225) !important;
+    color: white !important;
+}
+
+.p2-box-h2 {
+    margin-bottom: 20px;
+    color: rgb(121, 10, 225);
+    font-size: 20px;
+    font-weight: 11px;
+}
+
+.p2-box-p {
+    color: grey;
+    font-size: 18px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(182, 181, 181);
+}
+
+.icon2 {
+    width: 12px;
+    height: 12px;
+}
+.icon3 {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* contact */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.contact-section .infor {
+    width: 100%;
+    padding: 50px;
+    background-color: rgba(251, 251, 251, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(110, 108, 108, 0.5);
+    border-radius: 10px;
+}
+
+.contact-section .infor i {
+    font-size: 20px;
+    color: #000000;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #a9acae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-section .infor h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+
+.contact-section .infor p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+}
+
+.writing {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    color: yellowgreen;
+}
+
+
+/*SUbSections*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg {
+    background-color: #894bca;
+    background-size: cover;
+    height: 100vh;
+}
+
+.head1 {
+    font-family: bee Serif;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    padding-top: 60px;
+
+}
+
+.img1 {
+    width: 100vw;
+    height: 200px;
+}
+
+.card {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.heading {
+    color: #f780c3;
+    font-size: 20px;
+    font-family: Bree Serif;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sec2-cards {
+    background-color: white;
+    margin: 19px;
+}
+
+.sec2-card-head {
+
+    font-size: 16px;
+    padding-left: 4px;
+    margin-left: 5px;
+}
+
+.sec2-card-para {
+    margin-left: 5px;
+    color: #253263;
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+.sec2-img2 {
+    width: 70px;
+    height: 100px;
+    border-radius: 7px;
+}
